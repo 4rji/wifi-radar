@@ -45,7 +45,7 @@ func main() {
 
 	flag.Var(&ifs, "if", "interface name to monitor (repeatable)")
 	flag.DurationVar(&interval, "interval", 500*time.Millisecond, "sampling interval")
-	flag.StringVar(&listen, "listen", "127.0.0.1:8888", "HTTP bind address")
+	flag.StringVar(&listen, "listen", "0.0.0.0:8888", "HTTP bind address")
 	flag.BoolVar(&public, "public", false, "bind 0.0.0.0 (overrides listen if set)")
 	flag.BoolVar(&askIf, "ask-if", false, "always ask which interface to use")
 	flag.BoolVar(&openBrowser, "open", true, "open Firefox after start")
